@@ -9,13 +9,12 @@ function App() {
     <div className="App">
       <h1>Exercise React-Redux (Simple)</h1>
       <div className="line">
-        <Interval>
-        </Interval>
+        <Interval></Interval>
       </div>
       <div className="line">
-        <Media title="#02 - Card" color="green">X</Media>
-        <Soma title="#03 - Card" color="blue">Y</Soma>
-        <Sorteio title="#04 - Card" color="purple">Z</Sorteio>
+        <Media title="#02 - Card" color="green"></Media>
+        <Soma title="#03 - Card" color="blue"></Soma>
+        <Sorteio title="#04 - Card" color="purple"></Sorteio>
       </div>
     </div>
   );

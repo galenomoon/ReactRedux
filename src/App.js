@@ -3,11 +3,16 @@ import Interval from "./components/Interval";
 import Media from "./components/Media";
 import Soma from "./components/Soma";
 import Sorteio from "./components/Sorteio";
+import Logo from "./logo.svg";
 
 function App() {
   return (
     <div className="App">
-      <h1>Exercise React-Redux (Simple)</h1>
+      <div className="line2">
+        <img src={Logo} className="App-logo" />
+        <h1>Exercise React-Redux (Simple)</h1>
+        <img src={Logo} className="App-logo" />
+      </div>
       <div className="line">
         <Interval></Interval>
       </div>

@@ -1,0 +1,45 @@
+.card {
+  /* background-color: Red; */
+  flex: 1;
+  display: flex;
+  border: 2px solid;
+  flex-direction: column;
+  border-radius: 10px;
+  margin: 10px;
+  overflow: hidden;
+  /* box-shadow: 8px 8px 10px black; */
+  transition: 0.3s;
+  /* min-width: 450px; */
+  /* max-width: 50%; */
+}
+
+.card .header {
+  display: flex;
+  justify-content: center;
+}
+.card:hover {
+  transition: 0.3s;
+  transform: scale(1.05);
+  box-shadow: 5px 3px 10px black;
+}
+.card .header .title {
+  flex: 1;
+  padding: 10px 0px;
+  justify-content: center;
+}
+
+.card .content {
+  flex: 1;
+  background-color: #ffff;
+  color: #000;
+  padding: 10px;
+}
+.title {
+  transition: 0.6s;
+}
+.card:hover .title {
+  transition: 1s;
+  transform: scale(1.1);
+  transform:rotate(360deg);
+  text-shadow: 0px 0px 15px white;
+}

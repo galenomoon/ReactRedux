@@ -6,14 +6,18 @@ function App() {
     <div className="App">
       <h1>Exercise React-Redux (Simple)</h1>
       <div className="line">
-        <Card></Card>
-        <Card></Card>
-        <Card></Card>
+        <Card title="#01 - Card" color="red">
+          W
+        </Card>
       </div>
       <div className="line">
-        <Card></Card>
-        <Card></Card>
-        <Card></Card>
+        <Card title="#02 - Card" color="green">X</Card>
+        <Card title="#03 - Card" color="blue">
+          Y
+        </Card>
+        <Card title="#04 - Card" color="purple">
+          Z
+        </Card>
       </div>
     </div>
   );

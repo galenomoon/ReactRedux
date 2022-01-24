@@ -2,27 +2,30 @@ import './Interval.css'
 import React from 'react'
 import Card from './Card'
 import { connect } from 'react-redux'
-import { changeMinValue } from '../store/actions/numbers'
+import { changeMinValue, changeMaxValue } from '../store/actions/numbers'
 
 function Interval(props) {
     const { min, max } = props;
-    props.minChange(10000)
+
     return (
         <Card title="Number Range" color='red'>
             <div className="Interval">
 
                 <span>
                     <strong>Minimal</strong>
-                    <input type="number" value={min} />
+                    <input type="number" value={min}
+                        onChange={e => props.changeMinimal(+e.target.value)} />
                 </span>
                 <span>
                     <strong>Maximum</strong>
-                    <input type="number" value={max} />
+                    <input type="number" value={max}
+                        onChange={e => props.changeMax(+e.target.value)} />
                 </span>
             </div>
         </Card>
     )
 }
+// onChange={e => props.changeMaximus(+e.target.value)} 
 
 //Mapping states of applications and sending to props
 function mapStateToProps(state) {
@@ -33,17 +36,21 @@ function mapStateToProps(state) {
 }
 
 //Mapping AC of applications and sending to props
-function mapActionCreatorsToProps(dispatch) {
+function mapDispatchToProps(dispatch) {
     return { //Calling reducer's states
-        minChange(newValue) {
+        changeMinimal(newValue) {
             //Action Creator returning an action
             const action = changeMinValue(newValue)
-            dispatch(action)
+            dispatch(action) //Evolve state of application
+        }, changeMax(newValue) {
+            //Action Creator returning an action
+            const action = changeMaxValue(newValue)
+            dispatch(action) //Evolve state of application
         }
     }
 }
 
 export default connect(
     mapStateToProps,
-    mapActionCreatorsToProps
+    mapDispatchToProps
 )(Interval)

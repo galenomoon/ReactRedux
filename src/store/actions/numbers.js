@@ -8,3 +8,11 @@ export function changeMinValue(newValue){
         payload: newValue
     }
 }
+export function changeMaxValue(newValue){
+    //Returning an Action
+    return {
+        //Mandatory to use type 
+        type: 'VALUE_MAX_CHANGED',
+        payload: newValue
+    }
+}

@@ -9,10 +9,15 @@ const reducers = combineReducers({
           ...state,
           min: action.payload,
         };
+      case "VALUE_MAX_CHANGED":
+        return {
+          ...state,
+          max: action.payload,
+        };
       default:
         return {
-          min: 7,
-          max: 31,
+          min: 0,
+          max: 10,
         };
     }
   },

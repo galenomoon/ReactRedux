@@ -4,7 +4,7 @@ import Card from './Card'
 
 function Sorteio(props) {
     const { min, max } = props
-    const random = parseInt(Math.random() * (max - min))
+    const random = parseInt(Math.random() * (max - min)) + min
     return (
         <Card title="Numbers Raffle" color='purple'>
             <div>

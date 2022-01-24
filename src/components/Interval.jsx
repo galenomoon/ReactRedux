@@ -10,7 +10,6 @@ function Interval(props) {
     return (
         <Card title="Number Range" color='red'>
             <div className="Interval">
-
                 <span>
                     <strong>Minimal</strong>
                     <input type="number" value={min}

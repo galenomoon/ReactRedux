@@ -39,6 +39,6 @@
 .card:hover .title {
   transition: 1s;
   transform: scale(1.1);
-  transform:rotateY(720deg);
+  transform: rotateY(720deg);
   text-shadow: 0px 0px 15px white;
 }

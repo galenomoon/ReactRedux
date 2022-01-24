@@ -15,7 +15,6 @@ function Media(props) {
         </Card>
     )
 }
-
 //Mapping states of applications and sending to props
 function mapStateToProps(state) {
     return { //Calling reducer's states

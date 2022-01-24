@@ -22,23 +22,23 @@ h1 {
 .App-logo {
   display: flex;
   width: 14vw;
-  padding-left:10px;
-  padding-right:10px;
+  padding-left: 10px;
+  padding-right: 10px;
   animation: light 2.5s alternate infinite;
 }
 
 @keyframes light {
   from {
     text-shadow: 0px 0px 0px rgba(255, 255, 255, 0);
-    transform:scale(1.0);
-    transform:rotateY(360deg);
+    transform: scale(1);
+    transform: rotateY(360deg);
     -webkit-filter: drop-shadow(0px 0px 25px rgb(0, 255, 229));
   }
-  
+
   to {
     -webkit-filter: drop-shadow(0px 0px 25px rgb(0, 255, 229));
     text-shadow: 0px 0px 15px rgb(255, 255, 255);
-    transform:scale(1.1);
-    transform:rotateY(0deg);
+    transform: scale(1.1);
+    transform: rotateY(0deg);
   }
 }

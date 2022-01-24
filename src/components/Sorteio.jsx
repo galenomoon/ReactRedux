@@ -21,7 +21,7 @@ function Sorteio(props) {
 function mapStateToProps(state) {
     return { //Calling reducer's states
         min: state.numbers.min,
-        max: state.numbers.max,
+        max: state.numbers.max
     }
 }
 

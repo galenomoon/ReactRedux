@@ -4,6 +4,7 @@ import Media from "./components/Media";
 import Soma from "./components/Soma";
 import Sorteio from "./components/Sorteio";
 import Logo from "./logo.svg";
+import Card from "./components/Card";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <h1>Exercise React-Redux (Simple)</h1>
         <img src={Logo} className="App-logo" />
       </div>
+      {/* <Card> */}
       <div className="line">
         <Interval></Interval>
       </div>
@@ -21,6 +23,7 @@ function App() {
         <Soma title="#03 - Card" color="blue"></Soma>
         <Sorteio title="#04 - Card" color="purple"></Sorteio>
       </div>
+      {/* </Card> */}
     </div>
   );
 }
